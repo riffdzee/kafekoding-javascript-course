@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tipe Data</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="short icon" href="img/JavaScript-logo.png">
-    <meta name="robots" content="noindex, follow">
+	<title>Tipe Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
+	<meta name="robots" content="noindex, follow">
 </head>
 <body>
 	<div class="wrapper d-flex align-items-stretch">
@@ -48,13 +48,13 @@
 					<li>
 						<a href="loopingpage.html">Looping</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="arraypage.html">Array</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="objectpage.html">Object</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="functionpage.html">Function</a>
 					</li>
 					</ul>
@@ -67,63 +67,64 @@
 		</nav>
 		<div class="content">
 			<nav class="navbar navbar-dark bg-primary">
-                <div class="container">
-                    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
-                    <img src="/Javascript Course Subject/img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
-                    <!-- <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
-                    </form> -->
-                </div>
-            </nav>
+		                <div class="container">
+		                    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
+		                    <img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+		                    <!-- <form class="form-inline my-2 my-lg-0">
+		                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+		                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+		                    </form> -->
+		                </div>
+            		</nav>
 			<!-- Page Content  -->
 			<div id="content" class="p-4 p-md-5 pt-5">
 				<div class="container">
 					<h2 style="font-weight:700;">Tipe Data</h2><br>
 					<p><img src="img/piring-variabel.png" alt=""></p>
-                    <p>Dalam pemrograman, tipe data merupakan konsep penting. Untuk dapat beroperasi pada variabel, penting untuk mengetahui sesuatu tentang tipenya. 
-                    Tanpa tipe data, komputer tidak dapat menyelesaikan masalah di bawah ini :</p>
-                    <code><p>
-                        var x = 11 + "Nama";
-                    </p></code>
-                    <p><img src="img/variabel-tipe-data.webp" alt=""></p>
-                    <p>Apakah masuk akal untuk menambahkan "Nama" dengan sebelas? Apakah akan menghasilkan kesalahan atau akan memberikan hasil? JavaScript akan memperlakukan contoh di atas sebagai berikut :</p>
-                    <code><p>
-                        var x = "11" + "Nama";
-                    </p></code>
-                    <p>Ada 2 macam dari tipe data, yaitu :</p>
-                    <h4>Tipe Data Primitif</h4>
-                    <p>Kali ini kita akan membahas beberapa basic tipe data yaitu tipe data primitif. <br>
-                    Primitif (nilai primitif, tipe data primitif) adalah data yang bukan objek dan tidak memiliki method. Dalam JavaScript, ada 6 tipe data primitif, yaitu : <p>String, Number, Boolean, Null, Undefined, Symbol (ECMAScript 2015).</p>
-                    Namun untuk kali ini, kita hanya akan mempelajari tentang tipe data Number, String dan Boolean.</p>
-                    <li>Number</li>
-                    <p>Value dari tipe data number adalah nilai numerik. Dalam program JavaScript, tipe data number ditulis sebagai berikut :</p>
-                    <code><p>50; // bilangan int
-                        3.14; // bilangan desimal
-                        Pengunaannya : let umur = 20 
-                    </p></code>
-                    <li>String</li>
-                    <p>Tipe data dasar berikutnya adalah string. String digunakan untuk merepresentasikan teks. String ditulis dengan melampirkan kontennya dalam tanda kutip.
-                    Kita dapat menggunakan single quotes, double quotes, atau backticks untuk menandai string, selama tanda kutip di awal dan akhir string dibuat sama. </p>
-                    <code><p>'Ini adalah kelas javascript' <br> "Ini adalah kelas javascript" <br>`Ini adalah kelas javascript`</p></code>
-                    <p>Tanda kutip yang didahului oleh backslash tidak akan mengakhiri string tetapi menjadi bagian darinya. 
-                    Ketika karakter "n" muncul setelah backslash (\n), itu ditafsirkan sebagai baris baru. Demikian pula, "t" setelah backslash (\t) berarti karakter tab.</p>
-                    <code><p>"Ini baris pertama\nDan ini baris kedua"; <br>//Output: <br> baris pertama <br>Dan ini baris kedua</p></code>
-                    <p>Bagaimana dengan penulisan "Tambahkan dengan \n" ?</p>
-                    <code><p>"Tambahkan dengan \"\\n\""</p></code>
-                    <p> Bagimana dengan penulisan "Hari ini adalah hari Jum'at" ? </p>
-                   <code><p>"Hari ini adalah hari Jum'at"</p></code>
-                    <li>Boolean</li>
-                    <p>Boolean seringkali digunakan untuk nilai yang hanya memiliki dua kemungkinan, seperti "yes" dan "no" atau "on" dan "off". 
-                    Untuk tujuan ini, JavaScript memiliki tipe Boolean, yang hanya memiliki dua nilai, true dan false.</p>
-                    <code><p>console.log(3 > 2);<br>console.log(3 < 2);<br>// → false</p></code>
-                    <h4>Tipe Data Non Primitif</h4>
-                    <p>Ada 3 tipe data non primitif, yaitu :
-                    <li><a href="arraypage.html">Array</a></li> 
-                    <li><a href="objectpage.html">Object</a></li>
-                    <li><a href="functionpage.html">Function</a></li></p>
-                    <p>Untuk penjelasan lebih lanjut, silahkan diklik masing-masing tipe data di atas ini.</p>
-                </div>
+			                    <p>Dalam pemrograman, tipe data merupakan konsep penting. Untuk dapat beroperasi pada variabel, penting untuk mengetahui sesuatu tentang tipenya. 
+			                    Tanpa tipe data, komputer tidak dapat menyelesaikan masalah di bawah ini :</p>
+			                    <code><p>
+			                        var x = 11 + "Nama";
+			                    </p></code>
+			                    <p><img src="img/variabel-tipe-data.webp" alt=""></p>
+			                    <p>Apakah masuk akal untuk menambahkan "Nama" dengan sebelas? Apakah akan menghasilkan kesalahan atau akan memberikan hasil? JavaScript akan memperlakukan contoh di atas sebagai berikut :</p>
+			                    <code><p>
+			                        var x = "11" + "Nama";
+			                    </p></code>
+			                    <p>Ada 2 macam dari tipe data, yaitu :</p>
+			                    <h4>Tipe Data Primitif</h4>
+			                    <p>Kali ini kita akan membahas beberapa basic tipe data yaitu tipe data primitif. <br>
+			                    Primitif (nilai primitif, tipe data primitif) adalah data yang bukan objek dan tidak memiliki method. Dalam JavaScript, ada 6 tipe data primitif, yaitu : <p>String, Number, Boolean, Null, Undefined, Symbol (ECMAScript 2015).</p>
+			                    Namun untuk kali ini, kita hanya akan mempelajari tentang tipe data Number, String dan Boolean.</p>
+			                    <li>Number</li>
+			                    <p>Value dari tipe data number adalah nilai numerik. Dalam program JavaScript, tipe data number ditulis sebagai berikut :</p>
+			                    <code><p>50; // bilangan int
+			                        3.14; // bilangan desimal
+			                        Pengunaannya : let umur = 20 
+			                    </p></code>
+			                    <li>String</li>
+			                    <p>Tipe data dasar berikutnya adalah string. String digunakan untuk merepresentasikan teks. String ditulis dengan melampirkan kontennya dalam tanda kutip.
+			                    Kita dapat menggunakan single quotes, double quotes, atau backticks untuk menandai string, selama tanda kutip di awal dan akhir string dibuat sama. </p>
+			                    <code><p>'Ini adalah kelas javascript' <br> "Ini adalah kelas javascript" <br>`Ini adalah kelas javascript`</p></code>
+			                    <p>Tanda kutip yang didahului oleh backslash tidak akan mengakhiri string tetapi menjadi bagian darinya. 
+			                    Ketika karakter "n" muncul setelah backslash (\n), itu ditafsirkan sebagai baris baru. Demikian pula, "t" setelah backslash (\t) berarti karakter tab.</p>
+			                    <code><p>"Ini baris pertama\nDan ini baris kedua"; <br>//Output: <br> baris pertama <br>Dan ini baris kedua</p></code>
+			                    <p>Bagaimana dengan penulisan "Tambahkan dengan \n" ?</p>
+			                    <code><p>"Tambahkan dengan \"\\n\""</p></code>
+			                    <p> Bagimana dengan penulisan "Hari ini adalah hari Jum'at" ? </p>
+			                   <code><p>"Hari ini adalah hari Jum'at"</p></code>
+			                    <li>Boolean</li>
+			                    <p>Boolean seringkali digunakan untuk nilai yang hanya memiliki dua kemungkinan, seperti "yes" dan "no" atau "on" dan "off". 
+			                    Untuk tujuan ini, JavaScript memiliki tipe Boolean, yang hanya memiliki dua nilai, true dan false.</p>
+			                    <code><p>console.log(3 > 2);<br>console.log(3 < 2);<br>// → false</p></code>
+			                    <h4>Tipe Data Non Primitif</h4>
+			                    <p>Ada 3 tipe data non primitif, yaitu :
+			                    <li><a href="arraypage.html">Array</a></li> 
+			                    <li><a href="objectpage.html">Object</a></li>
+			                    <li><a href="functionpage.html">Function</a></li></p>
+			                    <p>Untuk penjelasan lebih lanjut, silahkan diklik masing-masing tipe data di atas ini.</p>
+			        </div>
+			</div>
 		</div>
 		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
 	</div>
