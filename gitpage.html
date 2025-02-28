@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>GIT dan Github</title>
+    <title>GIT</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="short icon" href="img/JavaScript-logo.png">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
     <meta name="robots" content="noindex, follow">
 </head>
 <body>
@@ -22,7 +22,7 @@
 						<a href="toolspage.html">Tools yang Digunakan</a>
 					</li>
 					<li class="active">
-						<a href="gitpage.html">GIT dan Github</a>
+						<a href="gitpage.html">GIT</a>
 					</li>
 					<li>
 						<a href="printpage.html">Mencetak Teks/Objek</a>
@@ -48,13 +48,13 @@
 					<li>
 						<a href="loopingpage.html">Looping</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="arraypage.html">Array</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="objectpage.html">Object</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="functionpage.html">Function</a>
 					</li>
 				</ul>
@@ -69,7 +69,7 @@
 			<nav class="navbar navbar-dark bg-primary">
 				<div class="container">
 					<a class="navbar-brand" href="home.html" style="font-weight: bold;">
-					<img src="/Javascript Course Subject/img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+					<img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
 					<!-- <form class="form-inline my-2 my-lg-0">
 						<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
 						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
@@ -79,18 +79,90 @@
 				<!-- Page Content  -->
 			<div id="content" class="p-4 p-md-5 pt-5">
 				<div class="container">
-					<h2 style="font-weight:700;">Extension yang Digunakan</h2><br>
-					<p>Adapun extension dari Visual Studio Code yang harus dipersiapkan oleh teman-teman untuk mendukung pembelajaran kita yaitu : <br><br>
-                    1. <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a> digunakan untuk menjalankan server lokal untuk proses debugging tampilan dan desain HTML. Live server ini akan mendeteksi perubahan di dalam file HTML, CSS, dan JS dan melakukan live reload secara otomatis. <br>
-                    2. <a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets" target="_blank">JavaScript (ES6) Code Snippets</a> digunakan untuk kerangka snippets penulisan JavaScript dengan basis standar ES2015. <br>
-                    <!-- 3. <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a> digunakan sebagai code editor/tempat untuk menulis, menyusun dan menjalankan kode JavaScript yang dibuat oleh teman-teman. <br>
-                    Alternatif : teman-teman juga bisa menggunakan <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">Programiz</a> sebagai code editor, dapat diakses secara dengan koneksi internet dan tidak perlu diinstall terlebih dahulu. <br> --> </p>
+					<h2 style="font-weight:700;">GIT</h2><br>
+					<p>Git adalah sebuah version control sistem yang membantu proses kolaborasi pengembangan proyek dengan mempermudah saat melacak perubahan dari source code.</p>
+					<h4>Instalasi GIT</h4>
+					<p>Windows : <a href="https://git-scm.com/download/win">Klik disini</a></p>
+					<p>MacOS : <a href="https://git-scm.com/download/mac">Klik disini</a></p>
+					<p>Linux : <a href="https://git-scm.com/download/linux">Klik disini</a></p>
+					<h4>Verifikasi Instalasi GIT</h4>
+					<code><p>$ git --version</p></code>
+					<h4>Konfigurasi GIT</h4>
+					<p>Mengatur nama pengguna git di lokal sistem</p>
+					<code><p>git config --global user.name "nama anda"</p></code>
+					<p>Mengatur email pengguna git di lokal sistem</p>
+					<code><p>git config --global user.email "email@example.com"</p></code>
+					<p>Melihat konfigurasi</p>
+					<code><p>git config --list</p></code>
+					<h4>Perintah GIT</h4>
+					<p style="font-weight: bold;">Membuat Repositori dan Menyimpan Perubahan</p>
+					<p>Membuat git repositori lokal</p>
+					<code><p>git init nama_direktori</p></code>
+					<p>Menyalin git repositori remote ke lokal</p>
+					<code><p>git clone url_repositori</p></code>
+					<p>Menyimpan perubahan file tertentu ke staging area</p>
+					<code><p>git add nama_file</p></code>
+					<p>Menyimpan semua perubahan di repositori ke staging area</p>
+					<code><p>git add .</p></code>
+					<p>Menyimpan perubahan di staging area ke git repositori</p>
+					<code><p>git commit -m "pesan commit"</p></code>
+					<p style="font-weight: bold;">Melakukan Perubahan Terhadap File Atau Direktori</p>
+					<p>Menghapus berkas tertentu dari repositori dan staging area</p>
+					<code><p>git rm nama_file</p></code>
+					<p>Menghapus direktori dari repositori dan staging area</p>
+					<code><p>git rm -r nama_direktori</p></code>
+					<p>Memindahkan file ke direktori lain</p>
+					<code><p>git mv nama_file direktori_tujuan/</p></code>
+					<p>Mengubah nama file</p>
+					<code><p>git mv nama_file nama_file_baru</p></code>
+					<p style="font-weight: bold;">Perubahan Di Repositori</p>
+					<p>Menampilkan perubahan berdasarkan status</p>
+					<code><p>git status</p></code>
+					<p>Menampilkan riwayat commit</p>
+					<code><p>git log</p></code>
+					<p>Membatalkan perubahan yang belum di commit</p>
+					<code><p>git restore</p></code>
+					<p>Membatalkan perubahan di staging area</p>
+					<code><p>git reset nama_file</p></code>
+					<p>Mengatur ulang ke commit terakhir</p>
+					<code><p>git reset HEAD-1</p></code>
+					<p style="font-weight: bold;">Remote Repositories</p>
+					<p>Menambahkan akses ke remote repository</p>
+					<code><p>git remote add nama_alias URL_repositori</p></code>
+					<p>Menghapus akses remote repository</p>
+					<code><p>git fetch nama_alias</p></code>
+					<p>Mengambil perubahan dari remote repository tanpa menggabungkannya ke lokal</p>
+					<code><p>git fetch nama_alias</p></code>
+					<p>Mengirim perubahan lokal ke remote repository</p>
+					<code><p>git push nama_alias nama_branch</p></code>
+					<p>Mengambil perubahan dari remote repository</p>
+					<code><p>git pull nama_alias nama_branch</p></code>
+					<p style="font-weight: bold;">Branch & Merge</p>
+					<p>Menampilkan daftar branch</p>
+					<code><p>git branch</p></code>
+					<p>Membuat branch baru</p>
+					<code><p>git branch nama_branch</p></code>
+					<p>Beralih ke branch lain</p>
+					<code><p>git checkout nama_branch</p></code>
+					<p>Membuat dan beralih ke branch baru</p>
+					<code><p>git checkout -b nama_branch</p></code>
+					<p>Menggabungkan antara branch saat ini dan branch lain</p>
+					<code><p>git merge branch_lain</p></code>
+					<p>Menyimpan perubahan sementara dengan pesan perubahan</p>
+					<code><p>git stash save "pesan perubahan"</p></code>
+					<p>Menampilkan daftar stash yang telah dibuat</p>
+					<code><p>git stash list</p></code>
+					<p>Mengembalikan perubahan dari stash tanpa menghapus stash tersebut</p>
+					<code><p>git stash apply</p></code>	
+					<p>Menghapus stash setelah mengembalikan perubahan</p>
+					<code><p>git stash drop</p></code>
+				</div>
 			</div>
 		</div>
 		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
 	</div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scrolldown-btn.js"></script>
 </body>
 </html>
