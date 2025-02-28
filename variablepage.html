@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Variabel</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="short icon" href="img/JavaScript-logo.png">
-    <meta name="robots" content="noindex, follow">
+	<title>Variabel</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
+	<meta name="robots" content="noindex, follow">
 </head>
 <body>
 	<div class="wrapper d-flex align-items-stretch">
@@ -48,13 +48,13 @@
 					<li>
 						<a href="loopingpage.html">Looping</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="arraypage.html">Array</a>
 					</li>
-                    <li>
+					<li>
 						<a href="objectpage.html">Object</a>
 					</li>
-                    <li>
+                    			<li>
 						<a href="functionpage.html">Function</a>
 					</li>
 					</ul>
@@ -67,98 +67,99 @@
 		</nav>
 		<div class="content">
 			<nav class="navbar navbar-dark bg-primary">
-                <div class="container">
-                    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
-                    <img src="/Javascript Course Subject/img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
-                    <!-- <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
-                    </form> -->
-                </div>
-            </nav>
+				<div class="container">
+				<a class="navbar-brand" href="home.html" style="font-weight: bold;">
+				<img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+				<!-- <form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+				</form> -->
+				</div>
+            		</nav>
 			<!-- Page Content  -->
 			<div id="content" class="p-4 p-md-5 pt-5">
 				<div class="container">
 					<h2 style="font-weight:700;">Membuat Variabel</h2><br>
 					<p><img src="img/piring-variabel.png" alt=""></p>
-                    <p>Variabel umumnya merupakan tempat untuk menyimpan informasi, data atau nilai yang akan dikelola dalam sebuah program</p>
-                    <p><img src="img/variabel-tipe-data.webp" alt=""></p>
-                    <p>Berdasarkan ilustrasi di atas, dapat disimpulkan bahwa kardus tersebut merupakah sebuah variabel, sedangkan isi yang ada di dalamnya merupakan sebuah data atau nilai.</p>
-                    <p>Pada JavaScript setidaknya ada tiga cara untuk mendeklarasikan sebuah variabel, yaitu menggunakan keyword var, let, dan const. Pada versi ECMAScript 2015 (ES6) dikenalkan deklarasi variabel dengan let dan const untuk menggantikan var yang dinilai kontroversial dan rawan menimbulkan bug.</p>
-                    <h4>Ketentuan dalam Variabel</h4>
-                    <p>Berikut beberapa aturan dalam penamaan variabel yang teman-teman perlu ketahui : <br>
-                    <li>Harus dimulai dengan huruf atau underscore (_).</li>
-                        <li>Dapat terdiri dari huruf, angka, dan underscore (_) dengan berbagai kombinasi.</li>
-                        <li>Tidak boleh mengandung spasi (whitespace). Jika penamaan variabel lebih dari dua kata, tuliskan secara camelCase. <br> Contoh firstName, lastName, catName, dll.</li>
-                        <li>Tidak boleh mengandung karakter spesial (! . , / \ + * = dll.)</li>
-                    </p>
-                    <h4>Var, Let dan Const</h4>
-                    <p>Adapun perbedaan Var, Let dan Const dapat dilihat di bawah ini </p>
-                    <p><img src="img/0_mYuuRwjUfUOAdHpo.jpg" alt=""></p>
-                    <p>Analogi perbedaan antara Let dan Const bisa dilihat pada gambar di bawah ini</p>
-                    <p><img src="img/2021042312472766ecde4ddcf6f5779fb275d5252e70ef.jpeg" alt=""></p>
-                    <p>Tabel Perbedaan Var, Let dan Const</p>
-                    <table border="1">
-                        <thead>
-                        <tr>
-                        <th></th>
-                        <th>Var</th>
-                        <th>let</th>
-                        <th>Const</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                        <td><strong>Penugasan</strong></td>
-                        <td>Bisa diubah</td>
-                        <td>Bisa diubah</td>
-                        <td>Tidak bisa diubah</td>
-                        </tr>
-                        <tr>
-                        <td><strong>Scope</strong></td>
-                        <td>function-scoped</td>
-                        <td>block-scoped</td>
-                        <td>block-scoped</td>
-                        </tr>
-                        </tbody>
-                    </table><br>
-                    <h4>Scope</h4>
-                    <p>Scope adalah konteks atau ruang lingkup di mana variabel, fungsi, dan objek tersedia dalam kode anda. 
-                    Scope membatasi akses ke variabel dan membantu menghindari pertentangan nama variabel dalam sebuah kode. Ada tiga jenis scope dalam Javascript :
-                    <li>Global Scope</li>
-                    Variabel yang didefinisikan di luar blok kode atau fungsi manapun dalam suatu file Javascript memiliki cakupan global. Artinya, variabel tersebut bisa diakses dari mana saja dalam file tersebut, baik di dalam fungsi, blok kode ataupun di luar. </p>
-                    <code><p>
-                        var variableGlobal = "Ini adalah variabel global";<br>
-                        function contohFungsi() { <br>
-                        console.log(variableGlobal); // "Ini adalah variabel global"<br>
-                        }
-                    </p></code>
-                    <li>Local Scope (Function Scope)</li>
-                    <p>Variabel yang dibuat dalam sebuah fungsi memiliki scope lokal atau function scope. Mereka hanya bisa diakses dari dalam fungsi itu sendiri. </p>
-                    <code><p>
-                        function contohLokal() {<br>
-                            var variableLokal = "Nilai ini lokal lho";<br>
-                            console.log(variableLokal);//"Nilai ini lokal lho"<br>
-                        }<br>
-                          console.log(variableLokal); // undefined
-                    </p></code>
-                    <p>Jika kamu mencoba mengakses variableLokal di luar contohLokal(), Javascript tidak akan mengetahuinya <br> dan mengembalikan nilai undefined.</p>
-                    <li>Block Scope</li>
-                    <p>Berbeda dengan var yang memiliki function scope, variabel yang dideklarasikan dengan let atau const akan memiliki block scope. 
-                    Artinya, variabel tersebut hanya bisa diakses dalam block yang sama, baik itu berupa fungsi, kondisi if atau for loop.</p>
-                    <code><p>
-                        {<br>
-                        var variableLokal = "Nilai ini lokal lho";<br>
-                        console.log(variableLokal);//"Nilai ini lokal lho"<br>
-                        }<br>
-                          console.log(variableLokal); // undefined
-                    </p></code>
-                </div>
+					    <p>Variabel umumnya merupakan tempat untuk menyimpan informasi, data atau nilai yang akan dikelola dalam sebuah program</p>
+					    <p><img src="img/variabel-tipe-data.webp" alt=""></p>
+					    <p>Berdasarkan ilustrasi di atas, dapat disimpulkan bahwa kardus tersebut merupakah sebuah variabel, sedangkan isi yang ada di dalamnya merupakan sebuah data atau nilai.</p>
+					    <p>Pada JavaScript setidaknya ada tiga cara untuk mendeklarasikan sebuah variabel, yaitu menggunakan keyword var, let, dan const. Pada versi ECMAScript 2015 (ES6) dikenalkan deklarasi variabel dengan let dan const untuk menggantikan var yang dinilai kontroversial dan rawan menimbulkan bug.</p>
+					    <h4>Ketentuan dalam Variabel</h4>
+					    <p>Berikut beberapa aturan dalam penamaan variabel yang teman-teman perlu ketahui : <br>
+					    <li>Harus dimulai dengan huruf atau underscore (_).</li>
+						<li>Dapat terdiri dari huruf, angka, dan underscore (_) dengan berbagai kombinasi.</li>
+						<li>Tidak boleh mengandung spasi (whitespace). Jika penamaan variabel lebih dari dua kata, tuliskan secara camelCase. <br> Contoh firstName, lastName, catName, dll.</li>
+						<li>Tidak boleh mengandung karakter spesial (! . , / \ + * = dll.)</li>
+					    </p>
+					    <h4>Var, Let dan Const</h4>
+					    <p>Adapun perbedaan Var, Let dan Const dapat dilihat di bawah ini </p>
+					    <p><img src="img/0_mYuuRwjUfUOAdHpo.jpg" alt=""></p>
+					    <p>Analogi perbedaan antara Let dan Const bisa dilihat pada gambar di bawah ini</p>
+					    <p><img src="img/2021042312472766ecde4ddcf6f5779fb275d5252e70ef.jpeg" alt=""></p>
+					    <p>Tabel Perbedaan Var, Let dan Const</p>
+					    <table border="1">
+						<thead>
+						<tr>
+						<th></th>
+						<th>Var</th>
+						<th>let</th>
+						<th>Const</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+						<td><strong>Penugasan</strong></td>
+						<td>Bisa diubah</td>
+						<td>Bisa diubah</td>
+						<td>Tidak bisa diubah</td>
+						</tr>
+						<tr>
+						<td><strong>Scope</strong></td>
+						<td>function-scoped</td>
+						<td>block-scoped</td>
+						<td>block-scoped</td>
+						</tr>
+						</tbody>
+					    </table><br>
+					    <h4>Scope</h4>
+					    <p>Scope adalah konteks atau ruang lingkup di mana variabel, fungsi, dan objek tersedia dalam kode anda. 
+					    Scope membatasi akses ke variabel dan membantu menghindari pertentangan nama variabel dalam sebuah kode. Ada tiga jenis scope dalam Javascript :
+					    <li>Global Scope</li>
+					    Variabel yang didefinisikan di luar blok kode atau fungsi manapun dalam suatu file Javascript memiliki cakupan global. Artinya, variabel tersebut bisa diakses dari mana saja dalam file tersebut, baik di dalam fungsi, blok kode ataupun di luar. </p>
+					    <code><p>
+						var variableGlobal = "Ini adalah variabel global";<br>
+						function contohFungsi() { <br>
+						console.log(variableGlobal); // "Ini adalah variabel global"<br>
+						}
+					    </p></code>
+					    <li>Local Scope (Function Scope)</li>
+					    <p>Variabel yang dibuat dalam sebuah fungsi memiliki scope lokal atau function scope. Mereka hanya bisa diakses dari dalam fungsi itu sendiri. </p>
+					    <code><p>
+						function contohLokal() {<br>
+						    var variableLokal = "Nilai ini lokal lho";<br>
+						    console.log(variableLokal);//"Nilai ini lokal lho"<br>
+						}<br>
+						  console.log(variableLokal); // undefined
+					    </p></code>
+					    <p>Jika kamu mencoba mengakses variableLokal di luar contohLokal(), Javascript tidak akan mengetahuinya <br> dan mengembalikan nilai undefined.</p>
+					    <li>Block Scope</li>
+					    <p>Berbeda dengan var yang memiliki function scope, variabel yang dideklarasikan dengan let atau const akan memiliki block scope. 
+					    Artinya, variabel tersebut hanya bisa diakses dalam block yang sama, baik itu berupa fungsi, kondisi if atau for loop.</p>
+					    <code><p>
+						{<br>
+						var variableLokal = "Nilai ini lokal lho";<br>
+						console.log(variableLokal);//"Nilai ini lokal lho"<br>
+						}<br>
+						  console.log(variableLokal); // undefined
+					    </p></code>
+                		</div>
+			</div>
 		</div>
 		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
 	</div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scrolldown-btn.js"></script>
 </body>
 </html>
