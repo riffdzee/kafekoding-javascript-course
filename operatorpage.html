@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Operator</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Outfit:300,400,500,600,700,800,900" rel="stylesheet">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-	  <link rel="short icon" href="img/Logo Kafe Koding HD.png">
-    <meta name="robots" content="noindex, follow">
+	<title>Operator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Outfit:300,400,500,600,700,800,900" rel="stylesheet">  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
+	<meta name="robots" content="noindex, follow">
 </head>
 <body>
 	<div class="wrapper d-flex align-items-stretch">
@@ -48,13 +48,13 @@
 					<li>
 						<a href="loopingpage.html">Looping</a>
 					</li>
-          <li>
+         				<li>
 						<a href="arraypage.html">Array</a>
 					</li>
-          <li>
+          				<li>
 						<a href="objectpage.html">Object</a>
 					</li>
-          <li>
+          				<li>
 						<a href="functionpage.html">Function</a>
 					</li>
 					</ul>
@@ -67,237 +67,237 @@
 		</nav>
 		<div class="content">
 			<nav class="navbar navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="home.html" style="font-weight: bold;">
-            <img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
-            </form> -->
-        </div>
-      </nav>
+				<div class="container">
+				    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
+				    <img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+				    <!-- <form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+				    </form> -->
+				</div>
+     			</nav>
 			<!-- Page Content  -->
 			<div id="content" class="p-4 p-md-5 pt-5">
 				<div class="container">
 					<h2 style="font-weight:700;">Operator</h2><br>
 				    <p></p>Operator adalah simbol yang digunakan untuk melakukan operasi pada suatu nilai dan variabel.
-                Operator dalam pemrograman terbagi dalam 6 jenis:
-                <li>Operator Aritmatika</li>
-                <li>Operator Penugasan (Assignment)</li>
-                <li>Opeartor relasi atau perbandingan</li>
-                <li>Operator Logika</li>
-                <li>Operator Bitwise</li>
-                <li>Operator Ternary</li>
-                <p>Untuk kali ini, kita hanya akan membahas tentang operator Aritmatika, Penugasan, Relasi/Perbandingan dan Logika.</p>
-                <h4>Operator aritmatika</h4>
-                <p>Operator aritmatika merupakan operator untuk melakukan operasi aritmatika seperti penjumlahan, pengurangan, pembagian, perkalian, dsb. Adapun soal yang dapat kita terapkan sebagai berikut :</p>
-                <code><p>let a = 3 <br>let b = 5 <br>let c = 15</p></code><br>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nama Operator</th>
-                            <th>Simbol</th>
-                            <th>Contoh</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                           <td>Penjumlahan</td>
-                           <td>+</td>
-                           <td>console.log(`${a} + ${b}`)</td>
-                        </tr>
-                         <tr>
-                            <td>Pengurangan</td>
-                            <td>-</td>
-                            <td>console.log(`${c} - ${b}`)</td>
-                         </tr>
-                         <tr>
-                            <td>Perkalian</td>
-                            <td>*</td>
-                            <td>console.log(`${a} * ${b}`)</td>
-                         </tr>
-                         <tr>
-                            <td>Pembagian</td>
-                            <td>+</td>
-                            <td>console.log(`${c} / ${b}`)</td>
-                         </tr>
-                         <tr>
-                            <td>Pemangkatan</td>
-                            <td>**</td>
-                            <td>console.log(`${a} ** ${b}`)</td>
-                         </tr>
-                         <tr>
-                            <td>Sisa Bagi</td>
-                            <td>%</td>
-                            <td>console.log(`${a} % ${3}`)</td>
-                         </tr>
-                    </tbody>
-                </table><br>
-                <p style="font-weight: bold;">Latihan Soal</p>
-                <p style=" width: 70%; color: #ffc908; background-color: black; padding: 10px 30px; border-radius: 10px;">
-                    Buatlah sebuah logika perhitungan dengan menggunakan operator aritmatika
-                    dengan hasil penjumlahan sama dengan 15 dan hasil pengurangan dengan sama dengan 1
-                    yang terlebih dahulu dibuatkan dalam varible let dulu. <br><br> Selamat mengerjakan !!</p>
-                <h4>Operator Penugasan</h4>
-                <p>Operator penugasan adalah operator yang digunakan untuk memberikan tugas kepada variabel. Biasanya digunakan untuk mengisi variabel.</p>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nama Operator</th>
-                            <th>Simbol</th>
-                            <th>Contoh</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Pengisian Nilai</td>
-                            <td>=</td>
-                            <td>let nilai = 100</td>
-                        </tr>
-                        <tr>
-                            <td>Pengisian dan Penambahan</td>
-                            <td>+=</td>
-                            <td>console.log(nilai += 5)</td>
-                        </tr>
-                        <tr>
-                            <td>Pengisian dan Pengurangan</td>
-                            <td>-=</td>
-                            <td>console.log(nilai -= 5)</td>
-                        </tr>
-                        <tr>
-                            <td>Pengisian dan Perkalian</td>
-                            <td>*=</td>
-                            <td>console.log(nilai *= 5)</td>
-                        </tr>
-                        <tr>
-                            <td>Pengisian dan Pemangkatan</td>
-                            <td>**=</td>
-                            <td>console.log(nilai **=5)</td>
-                        </tr>
-                        <tr>
-                            <td>Pengisian dan Pembagian</td>
-                            <td>/=</td>
-                            <td>console.log(nilai /= 5)</td>
-                        </tr>
-                        <tr>
-                            <td>Pengisian dan Sisa Bagi</td>
-                            <td>%=</td>
-                            <td>console.log(nilai %= 5)</td>
-                        </tr>
-                    </tbody>
-                </table><br>
-                <p style="font-weight: bold;">Latihan Soal</p>
-                <p style=" width: 70%; color: #ffc908; background-color: black; padding: 10px 30px; border-radius: 10px;">
-                let nama = "Senja"<br>let nilai = 80 <br> maka logika dengan operator penugasan dengan menggunakan (pengisian dan penjumlahan).
-                <br><br> Selamat mengerjakan !!</p>
-                <h4>Operator Perbandingan</h4>
-                <p>Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. 
-                Operator perbandingan akan menghasilkan sebuah nilai boolean true dan false.</p>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nama Operator</th>
-                            <th>Simbol</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lebih Kecil</td>
-                            <td><</td>
-                        </tr>
-                        <tr>
-                            <td>Lebih Besar</td>
-                            <td>></td>
-                        </tr>
-                        <tr>
-                            <td>Sama Dengan</td>
-                            <td>== atau ===</td>
-                        </tr>
-                        <tr>
-                            <td>Tidak Sama Dengan</td>
-                            <td>!=</td>
-                        </tr>
-                        <tr>
-                            <td>Lebih Kecil Sama Dengan</td>
-                            <td><=</td>
-                        </tr>
-                        <tr>
-                            <td>Lebih Besar Sama Dengan</td>
-                            <td>>=</td>
-                        </tr>
-                        <tr>
-                            <td>Pengisian dan Sisa bagi</td>
-                            <td>%=</td>
-                        </tr>
-                    </tbody>
-                </table><br>
-                <p>Contoh soal yang menerapkan operator perbandingan yaitu sebagai berikut :</p>
-                <p style="font-weight: bold;">Lebih Kecil dan Lebih Kecil Sama Dengan</p>
-                <code><p>
-                    var a = 3;<br>var b = 4;<br>console.log(a < b); // true<br>console.log(a <= b); // true <br>
-                    var a = 5;<br>b = 5;<br>console.log(a < b); // false<br>console.log(a <= b); // true
-                </p></code>
-                <p style="font-weight: bold;">Lebih Besar dan Lebih Besar Sama Dengan</p>
-                <code><p>
-                    var a = 3;<br>var b = 4;<br>console.log(a > b); // false<br>console.log(a >= b); // false
-                </p></code>
-                <p style="font-weight: bold;">Tidak Sama Dengan</p>
-                <code><p>
-                    var a = true;<br>var benar = true;<br>console.log(a !== benar); // false<br><br>
-                    var a = 12;<br>var b = 4;<br>console.log(a !== b); // true <br><br>
-                    var a = 7;<br>var b = "7";<br>console.log(a !== b); // true ! <br><br>            
-                    var a = "7";<br>var b = "7";<br>console.log(a !== b); // false
-                </p></code>
-                <p style="font-weight: bold;">Sama Dengan</p>
-                <code><p>
-                    var a = true;<br>var benar = true;<br>console.log(a == benar); // true <br><br>
-                    var a = 12;<br>var b = 4;<br>console.log(a == b); // false <br><br>
-                    var a = 7;<br>var b = "7";<br>console.log(a == b); // true <br><br>
-                    var a = true;<br>var benar = true;<br>console.log(a === benar); // true <br><br>
-                    var a = 12;<br>var b = 4;<br>console.log(a === b); // false <br><br>
-                    var a = 7;<br>var b = "7";<br>console.log(a === b); // false ! <br><br>
-                    var a = "7";<br>var b = "7";<br>console.log(a === b); // true
-                </p></code>
-                <h4>Operator Logika</h4>
-                <p>Operator logika digunakan untuk melakukan operasi terhadap dua nilai boolean.</p>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nama Operator</th>
-                            <th>Simbol</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>AND</td>
-                            <td>&&</td>
-                        </tr>
-                        <tr>
-                            <td>OR</td>
-                            <td>||</td>
-                        </tr>
-                        <tr>
-                            <td>Negasi/Kebalikan</td>
-                            <td>~</td>
-                        </tr>
-                    </tbody>
-                    </table><br>
-                    <p>Contoh soal yang menerapkan operator logika yaitu sebagai berikut :</p>
-                    <code><p>
-                        var a = true;<br>var b = false; <br><br>
-                        var hasil1 = a && b;<br>console.log(hasil1); //false <br><br>
-                        var hasil2 = a && a;<br>console.log(hasil2); //true <br><br>
-                        var hasil3 = a || b;<br>console.log(hasil3); //true <br><br>
-                        var hasil4 = ~a;<br>console.log(hasil4); //false
-                    </p></code>
-                </div>
-            </div>
-        </div>
+				Operator dalam pemrograman terbagi dalam 6 jenis:
+				<li>Operator Aritmatika</li>
+				<li>Operator Penugasan (Assignment)</li>
+				<li>Opeartor relasi atau perbandingan</li>
+				<li>Operator Logika</li>
+				<li>Operator Bitwise</li>
+				<li>Operator Ternary</li>
+				<p>Untuk kali ini, kita hanya akan membahas tentang operator Aritmatika, Penugasan, Relasi/Perbandingan dan Logika.</p>
+				<h4>Operator aritmatika</h4>
+				<p>Operator aritmatika merupakan operator untuk melakukan operasi aritmatika seperti penjumlahan, pengurangan, pembagian, perkalian, dsb. Adapun soal yang dapat kita terapkan sebagai berikut :</p>
+				<code><p>let a = 3 <br>let b = 5 <br>let c = 15</p></code><br>
+				<table border="1">
+				    <thead>
+					<tr>
+					    <th>Nama Operator</th>
+					    <th>Simbol</th>
+					    <th>Contoh</th>
+					</tr>
+				    </thead>
+				    <tbody>
+					<tr>
+					   <td>Penjumlahan</td>
+					   <td>+</td>
+					   <td>console.log(`${a} + ${b}`)</td>
+					</tr>
+					 <tr>
+					    <td>Pengurangan</td>
+					    <td>-</td>
+					    <td>console.log(`${c} - ${b}`)</td>
+					 </tr>
+					 <tr>
+					    <td>Perkalian</td>
+					    <td>*</td>
+					    <td>console.log(`${a} * ${b}`)</td>
+					 </tr>
+					 <tr>
+					    <td>Pembagian</td>
+					    <td>+</td>
+					    <td>console.log(`${c} / ${b}`)</td>
+					 </tr>
+					 <tr>
+					    <td>Pemangkatan</td>
+					    <td>**</td>
+					    <td>console.log(`${a} ** ${b}`)</td>
+					 </tr>
+					 <tr>
+					    <td>Sisa Bagi</td>
+					    <td>%</td>
+					    <td>console.log(`${a} % ${3}`)</td>
+					 </tr>
+				    </tbody>
+				</table><br>
+				<p style="font-weight: bold;">Latihan Soal</p>
+				<p style=" width: 70%; color: #ffc908; background-color: black; padding: 10px 30px; border-radius: 10px;">
+				    Buatlah sebuah logika perhitungan dengan menggunakan operator aritmatika
+				    dengan hasil penjumlahan sama dengan 15 dan hasil pengurangan dengan sama dengan 1
+				    yang terlebih dahulu dibuatkan dalam varible let dulu. <br><br> Selamat mengerjakan !!</p>
+				<h4>Operator Penugasan</h4>
+				<p>Operator penugasan adalah operator yang digunakan untuk memberikan tugas kepada variabel. Biasanya digunakan untuk mengisi variabel.</p>
+				<table border="1">
+				    <thead>
+					<tr>
+					    <th>Nama Operator</th>
+					    <th>Simbol</th>
+					    <th>Contoh</th>
+					</tr>
+				    </thead>
+				    <tbody>
+					<tr>
+					    <td>Pengisian Nilai</td>
+					    <td>=</td>
+					    <td>let nilai = 100</td>
+					</tr>
+					<tr>
+					    <td>Pengisian dan Penambahan</td>
+					    <td>+=</td>
+					    <td>console.log(nilai += 5)</td>
+					</tr>
+					<tr>
+					    <td>Pengisian dan Pengurangan</td>
+					    <td>-=</td>
+					    <td>console.log(nilai -= 5)</td>
+					</tr>
+					<tr>
+					    <td>Pengisian dan Perkalian</td>
+					    <td>*=</td>
+					    <td>console.log(nilai *= 5)</td>
+					</tr>
+					<tr>
+					    <td>Pengisian dan Pemangkatan</td>
+					    <td>**=</td>
+					    <td>console.log(nilai **=5)</td>
+					</tr>
+					<tr>
+					    <td>Pengisian dan Pembagian</td>
+					    <td>/=</td>
+					    <td>console.log(nilai /= 5)</td>
+					</tr>
+					<tr>
+					    <td>Pengisian dan Sisa Bagi</td>
+					    <td>%=</td>
+					    <td>console.log(nilai %= 5)</td>
+					</tr>
+				    </tbody>
+				</table><br>
+				<p style="font-weight: bold;">Latihan Soal</p>
+				<p style=" width: 70%; color: #ffc908; background-color: black; padding: 10px 30px; border-radius: 10px;">
+				let nama = "Senja"<br>let nilai = 80 <br> maka logika dengan operator penugasan dengan menggunakan (pengisian dan penjumlahan).
+				<br><br> Selamat mengerjakan !!</p>
+				<h4>Operator Perbandingan</h4>
+				<p>Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. 
+				Operator perbandingan akan menghasilkan sebuah nilai boolean true dan false.</p>
+				<table border="1">
+				    <thead>
+					<tr>
+					    <th>Nama Operator</th>
+					    <th>Simbol</th>
+					</tr>
+				    </thead>
+				    <tbody>
+					<tr>
+					    <td>Lebih Kecil</td>
+					    <td><</td>
+					</tr>
+					<tr>
+					    <td>Lebih Besar</td>
+					    <td>></td>
+					</tr>
+					<tr>
+					    <td>Sama Dengan</td>
+					    <td>== atau ===</td>
+					</tr>
+					<tr>
+					    <td>Tidak Sama Dengan</td>
+					    <td>!=</td>
+					</tr>
+					<tr>
+					    <td>Lebih Kecil Sama Dengan</td>
+					    <td><=</td>
+					</tr>
+					<tr>
+					    <td>Lebih Besar Sama Dengan</td>
+					    <td>>=</td>
+					</tr>
+					<tr>
+					    <td>Pengisian dan Sisa bagi</td>
+					    <td>%=</td>
+					</tr>
+				    </tbody>
+				</table><br>
+				<p>Contoh soal yang menerapkan operator perbandingan yaitu sebagai berikut :</p>
+				<p style="font-weight: bold;">Lebih Kecil dan Lebih Kecil Sama Dengan</p>
+				<code><p>
+				    var a = 3;<br>var b = 4;<br>console.log(a < b); // true<br>console.log(a <= b); // true <br>
+				    var a = 5;<br>b = 5;<br>console.log(a < b); // false<br>console.log(a <= b); // true
+				</p></code>
+				<p style="font-weight: bold;">Lebih Besar dan Lebih Besar Sama Dengan</p>
+				<code><p>
+				    var a = 3;<br>var b = 4;<br>console.log(a > b); // false<br>console.log(a >= b); // false
+				</p></code>
+				<p style="font-weight: bold;">Tidak Sama Dengan</p>
+				<code><p>
+				    var a = true;<br>var benar = true;<br>console.log(a !== benar); // false<br><br>
+				    var a = 12;<br>var b = 4;<br>console.log(a !== b); // true <br><br>
+				    var a = 7;<br>var b = "7";<br>console.log(a !== b); // true ! <br><br>            
+				    var a = "7";<br>var b = "7";<br>console.log(a !== b); // false
+				</p></code>
+				<p style="font-weight: bold;">Sama Dengan</p>
+				<code><p>
+				    var a = true;<br>var benar = true;<br>console.log(a == benar); // true <br><br>
+				    var a = 12;<br>var b = 4;<br>console.log(a == b); // false <br><br>
+				    var a = 7;<br>var b = "7";<br>console.log(a == b); // true <br><br>
+				    var a = true;<br>var benar = true;<br>console.log(a === benar); // true <br><br>
+				    var a = 12;<br>var b = 4;<br>console.log(a === b); // false <br><br>
+				    var a = 7;<br>var b = "7";<br>console.log(a === b); // false ! <br><br>
+				    var a = "7";<br>var b = "7";<br>console.log(a === b); // true
+				</p></code>
+				<h4>Operator Logika</h4>
+				<p>Operator logika digunakan untuk melakukan operasi terhadap dua nilai boolean.</p>
+				<table border="1">
+				    <thead>
+					<tr>
+					    <th>Nama Operator</th>
+					    <th>Simbol</th>
+					</tr>
+				    </thead>
+				    <tbody>
+					<tr>
+					    <td>AND</td>
+					    <td>&&</td>
+					</tr>
+					<tr>
+					    <td>OR</td>
+					    <td>||</td>
+					</tr>
+					<tr>
+					    <td>Negasi/Kebalikan</td>
+					    <td>~</td>
+					</tr>
+				    </tbody>
+				    </table><br>
+				    <p>Contoh soal yang menerapkan operator logika yaitu sebagai berikut :</p>
+				    <code><p>
+					var a = true;<br>var b = false; <br><br>
+					var hasil1 = a && b;<br>console.log(hasil1); //false <br><br>
+					var hasil2 = a && a;<br>console.log(hasil2); //true <br><br>
+					var hasil3 = a || b;<br>console.log(hasil3); //true <br><br>
+					var hasil4 = ~a;<br>console.log(hasil4); //false
+				    </p></code>
+				</div>
+			    </div>
+			</div>
 		</div>
 		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
 	</div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scrolldown-btn.js"></script>
 </body>
 </html>
