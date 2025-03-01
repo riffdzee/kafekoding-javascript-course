@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Outfit:300,400,500,600,700,800,900" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
+    <meta name="robots" content="noindex, follow">
+</head>
+<body>
+	<div class="wrapper d-flex align-items-stretch">
+		<nav id="sidebar">
+			<div class="p-4">
+				<ul class="list-unstyled components mb-5">
+					<li>
+						<a href="intropage.html">Pengenalan JavaScript</a>
+					</li>
+					<li>
+						<a href="toolspage.html">Tools yang Digunakan</a>
+					</li>
+					<li>
+						<a href="gitpage.html">GIT dan Github</a>
+					</li>
+					<li>
+						<a href="printpage.html">Mencetak Teks/Objek</a>
+					</li>
+					<li>
+						<a href="statementpage.html">Statement dan Expression</a>
+					</li>
+					<li>
+						<a href="commentpage.html">Membuat Komentar</a>
+					</li>
+					<li>
+						<a href="variablepage.html">Variabel</a>
+					</li>
+					<li>
+						<a href="datatypepage.html">Tipe Data</a>
+					</li>
+					<li>
+						<a href="operatorpage.html">Operator</a>
+					</li>
+					<li>
+						<a href="conditionpage.html">Condition</a>
+					</li>
+					<li>
+						<a href="loopingpage.html">Looping</a>
+					</li>
+                    <li class="active">
+						<a href="arraypage.html">Array</a>
+					</li>
+                    <li>
+						<a href="objectpage.html">Object</a>
+					</li>
+                    <li>
+						<a href="functionpage.html">Function</a>
+					</li>
+					</ul>
+			</div>
+			<div class="footer p-4" style="text-align: left;">
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright @Kafekoding 2025, All rights reserved |<br> This template made by 
+				<a href="https://colorlib.com" target="_blank" style="color: #ffc908;">Colorlib.com</a></p>
+			</div>
+		</nav>
+		<div class="content">
+			<nav class="navbar navbar-dark bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
+                    <img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+                    <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+                    </form> -->
+                </div>
+            </nav>
+			<!-- Page Content  -->
+			<div id="content" class="p-4 p-md-5 pt-5">
+				<div class="container">
+					<h2 style="font-weight:700;">Array</h2><br>
+                    <p><img src="img/javascript-array.webp" alt=""></p>
+                    <p>Array adalah Tipe data yang di gunakan untuk mendeskripsikan kumpulan elemen (nilai atau variabel) yang tiap elemen nya memiliki index.</p>
+				    <p>Kenapa Harus menggunakan Array? Bisa saja kita buat seperti ini :</p>
+                    <code><p>
+                        var hari1 = "senin";<br>var hari2 = "selasa";<br>var hari3 = "rabu";
+                    </p></code>
+                    <p>Apakah boleh seperti ini? Boleh-boleh saja. Tapi kurang efektif.</p>
+                    <p>Dengan menggunakan lebih mempersingkat sintak yang kita buat, dapat dilihat di bawah ini</p>
+                    <code><p>var hari = [ 'senin','selasa','rabu','kamis' ]<br>var siswa = [ 'budi','ayu','joko' ]</p></code>
+                    <p>Kelebihan dengan menggunakan array sebagai berikut :
+                    <li>Mempermudah pengelolaan nilai / data [ penelusuran dan pencarian ]</li>
+                    <li>Manajamen memori</li></p>
+                    <h4>Sifat-sifat dari array</h4>
+                    <p>
+                        <li>Variabel jamak yang mempunyai banyak elemen dengan nama variabel yang sama</li>
+                        <li>Kumpulan pasangan key dan nilai</li>
+                        <li>Key adalah index pada array dengan tipe integer yang di mulai dari array pada javascript bertipe objek</li>
+                        <li>Array pada JavaScript memiliki fungsi / method length untuk menghitung jumlah elemen di dalam nya</li>
+                        <li>Elemen pada array itu boleh memiliki tipe data yang berbeda</li>
+                    </p>
+                    <h4>Sintaks Array</h4>
+                    <p><img src="img/array1.png" alt=""></p>
+                    <p style="font-weight: bold">Cara 1</p>
+                    <code><p> var elemen = [ 'hardisk 2TB','flasdisk 32GB','modem' ]</p></code>
+                    <p style="font-weight: bold">Cara 2</p> 
+                    <code><p>
+                        var elemen =[ ]<br>elemen = [ 'hardisk 2TB','flasdisk 32GB','modem' ]
+                    </p></code>
+                    <p>Contoh sintak array menggunakan indeks yaitu sebagai berikut :</p>
+                    <code><p>
+                        var elemen = [ 'hardisk 2TB','flasdisk 32GB','modem' ]<br>console.log( elemen [ 2 ] )
+                    </p></code>
+                    <p>Output :</p>
+                    <p><img src="img/output docs/array.png" alt=""></p>
+                    <h4>Array Bersarang</h4>
+                    <p><img src="img/array3.png" alt=""></p>
+                    <p>Array bersarang/multidimensi merupakan array yang berada di dalam array lain yang menjadi induk dari array tersebut. 
+                    Bisa juga disebut sebagai Array didalam Array.</p>
+                    <p>Contoh skrip kode yang menerapkan array bersarang yaitu sebagai berikut :</p>
+                    <code><p>const keluarga = [ 'Budi Sudarsono','Ayu Sinta Putri',['Joko','Dina','April','Alif','Doni'] ]; <br>//Ayah = Budi Sudarsono, Ibu = Ayu Sinta Putri<br>
+                    console.log(keluarga[2][2]+' adalah anak dari '+keluarga[1]);<br>
+                    console.log(keluarga[2][4]+' adalah anak ke-5 dari '+keluarga[1]);</p></code>
+                    <p style="font-weight: bold;">Latihan Soal</p>
+                    <p style=" width: 70%; color: #ffc908; background-color: black; padding: 10px 30px; border-radius: 10px;">
+                    Buatlah sebuah array dan array bersarang dengan variabel yang bernama kelompok1<br>
+                    di dalam kelompok1 tersebut terdapat ketua, wakil ketua, dan juga 6 anggota kelompok.<br>
+                    Ketua (Adit) <br>
+                    Wakil Ketua (Cynthia) <br>
+                    Anggtoa Kelompok (Dimas, Farhan, Hasna, Jihan, Laura, Naufal) <br><br>
+                    Output : Dimas akan mengikuti lomba balap karung, sedangkan Hasna akan mengikuti lomba makan kerupuk. Lalu Jihan, Naufal dan Adit akan mengikuti lomba bakiak.<br><br> Selamat mengerjakan !!</p>
+                </div>
+            </div>
+		</div>
+		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+	</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scrolldown-btn.js"></script>
+</body>
+</html>
+
+
+
+
