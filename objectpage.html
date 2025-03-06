@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Object</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Outfit:300,400,500,600,700,800,900" rel="stylesheet">  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
+	<meta name="robots" content="noindex, follow">
+</head>
+<body>
+	<div class="wrapper d-flex align-items-stretch">
+		<nav id="sidebar">
+			<div class="p-4">
+				<ul class="list-unstyled components mb-5">
+					<li>
+						<a href="intropage.html">Pengenalan JavaScript</a>
+					</li>
+					<li>
+						<a href="toolspage.html">Tools yang Digunakan</a>
+					</li>
+					<li>
+						<a href="gitpage.html">GIT</a>
+					</li>
+					<li>
+						<a href="printpage.html">Mencetak Teks/Objek</a>
+					</li>
+					<li>
+						<a href="statementpage.html">Statement dan Expression</a>
+					</li>
+					<li>
+						<a href="commentpage.html">Membuat Komentar</a>
+					</li>
+					<li>
+						<a href="variablepage.html">Variabel</a>
+					</li>
+					<li>
+						<a href="datatypepage.html">Tipe Data</a>
+					</li>
+					<li>
+						<a href="operatorpage.html">Operator</a>
+					</li>
+					<li>
+						<a href="conditionpage.html">Condition</a>
+					</li>
+					<li>
+						<a href="loopingpage.html">Looping</a>
+					</li>
+                   	<li>
+						<a href="arraypage.html">Array</a>
+					</li>
+                    <li class="active">
+						<a href="objectpage.html">Object</a>
+					</li>
+					<li>
+						<a href="functionpage.html">Function</a>
+					</li>
+					</ul>
+			</div>
+			<div class="footer p-4" style="text-align: left;">
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright @Kafekoding 2025, All rights reserved |<br> This template made by 
+				<a href="https://colorlib.com" target="_blank" style="color: #ffc908;">Colorlib.com</a></p>
+			</div>
+		</nav>
+		<div class="content">
+			<nav class="navbar navbar-dark bg-primary">
+				<div class="container">
+				    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
+				    <img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+				    <!-- <form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+				    </form> -->
+				</div>
+			</nav>
+			<!-- Page Content  -->
+			<div id="content" class="p-4 p-md-5 pt-5">
+				<div class="container">
+				<h2 style="font-weight:700;">Object</h2><br>
+                <p>Object adalah sebuah variabel yang menyimpan nilai (properti) dan fungsi (method).</p>
+				<p>Dari contoh diatas dapat kita lihat bahwa terdapat sebuah function bernama “wadah”, yang didalamnya terdapat beberapa variable, array dan object. 
+                Untuk menggunakan function tersebut kita hanya perlu memanggil nama dari function tersebut “wadah()”. Jangan lupa untuk menggunakan buka-tutup kurung “()” pada akhir dari nama agar function tersebut dapat langsung digunakan. 
+                Silahkan dicoba apa perbedaan ketika teman-teman memanggil sebuah function dengan cara tanpa tutup kurung “wadah” dan dengan tutup kurung “wadah()”.</p>
+                <p>Function dapat dipanggil berkali-kali sesuai kebutuhan kita. Itulah mengapa materi function ini wajib teman-teman kuasai agar memudahkan dalam membuat codingan. Berikut contohnya :</p>
+                <p><img src="img/functionexample1.png" alt=""></p>
+                <p><h4>Kenapa Object (?)</h4></p>
+                <code><p>
+                    MAHASISWA<br>var nama = 'Lorem Ipsum'<br>Var umur = 24 <br>Var lulus = true <br>Var ipSemester : 3.92</p></code>
+                <p>Dari data mahasiswa dengan ditulis satu-satu masing data, sehingga kurang efektif untuk digunakan apabila skala banyak data yang akan digunakan</p>
+                <code><p>var mahasiswa ={
+                nama : 'Lorem Ipsum',<br>umur : 24,<br>lulus : true,<br>ipSemester : 3.92,<br>
+                }<br>Console.log(mahasiswa)</p></code>
+                <p>Output :</p>
+                <p><img src="img/objectoutput1.png" alt=""></p>
+                <h4>Akses Nilai Properti</h4>
+                <p>Akses nilai properti dapat dilakukan dengan dua cara, yaitu: </p>
+                <p>1.Penggunaan kurung siku ([ ]) setelah nama objek. Kurung siku kemudian diisikan dengan nama properti, yang harus berupa string.</p>
+                <code><p>var mahasiswa ={
+                    nama : 'Lorem Ipsum',<br>umur : 24,<br>lulus : true,<br>ipSemester : 3.92,<br>
+                }<br>Console.log(mahasiswa['umur'])</p></code>
+                </p></code>  
+                <p>Output :</p>
+                <p><img src="img/objectoutput2.png" alt=""></p>
+                <p>2.Penggunaan tanda titik (.) setelah nama objek diikuti dengan nama properti. Notasi ini merupakan notasi yang umum digunakan pada bahasa pemrograman lainnya</p>
+                <code><p>
+                    var mahasiswa ={
+                        nama : 'Lorem Ipsum',<br>umur : 24,<br>lulus : true,<br>ipSemester : 3.92,<br>
+                    }<br>Console.log(mahasiswa.nama)
+                </p></code>
+                <p>Output :</p>
+                <p><img src="img/objectoutput3.png" alt=""></p>
+                <p><h4>Object di dalam object</h4></p>
+                <code><p>
+                    var mahasiswa ={
+                        nama : 'Lorem Ipsum',<br>umur : 24,<br>lulus : true,<br>ipSemester : 3.92,<br>alamat: { <br>
+                            jalan: 'jln. Belanti no.123',<br>kota: 'padang',<br>provinsi: 'sumatera barat'
+                          }<br>
+                    }<br>Console.log(mahasiswa)
+                </p></code>
+                <p>Output :</p>
+                <p><img src="img/objectoutput4.png" alt=""></p>
+                <h4>Membuat object pada JavaScript</h4></p>
+                <li>Object Literal</li><br>
+                <code><p>
+                    var ayah = {<br>nama: 'budi',<br>umur:47,<br>agama: 'islam',<br>golonganDarah:'O',<br>alamat:'padang'<br>}<br>
+                    var ibu ={<br>nama: 'ayu',<br>umur: 45,<br>agama:'islam',<br>golonganDarah:'B',<br>alamat:'padang'<br>}<br>
+                    console.log(ayah)<br>console.log(ibu)
+                </p></code>
+                <p>Output :</p>
+                <p><img src="img/objectoutput5.png" alt=""></p>
+                <li>Function Declaration</li><br>
+                <code><p>
+                    function objekKeluarga(nama,umur,agama,alamat){<br>
+                    var keluarga=<br>keluarga.nama=nama<br>keluarga.umur=umur<br>keluarga.agama=agama<br>keluarga.alamat=alamat<br>return keluarga<br>}<br>
+                    var ayah= objekKeluarga('budi',47,'islam','padang')<br>var ibu=objekKeluarga('ayu',45,'islam','padang')<br>
+                    console.log(ayah)<br>console.log(ibu)
+                </p></code>
+                <p>Output :</p>
+                <p><img src="img/objectoutput6.png" alt=""></p>
+				</div>
+            </div>
+		</div>
+		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scrolldown-btn.js"></script>
+</body>
+</html>
