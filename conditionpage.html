@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Condition</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Outfit:300,400,500,600,700,800,900" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
+    <meta name="robots" content="noindex, follow">
+</head>
+<body>
+	<div class="wrapper d-flex align-items-stretch">
+		<nav id="sidebar">
+			<div class="p-4">
+				<ul class="list-unstyled components mb-5">
+					<li>
+						<a href="intropage.html">Pengenalan JavaScript</a>
+					</li>
+					<li>
+						<a href="toolspage.html">Tools yang Digunakan</a>
+					</li>
+					<li>
+						<a href="gitpage.html">GIT dan Github</a>
+					</li>
+					<li>
+						<a href="printpage.html">Mencetak Teks/Objek</a>
+					</li>
+					<li>
+						<a href="statementpage.html">Statement dan Expression</a>
+					</li>
+					<li>
+						<a href="commentpage.html">Membuat Komentar</a>
+					</li>
+					<li>
+						<a href="variablepage.html">Variabel</a>
+					</li>
+					<li>
+						<a href="datatypepage.html">Tipe Data</a>
+					</li>
+					<li>
+						<a href="operatorpage.html">Operator</a>
+					</li>
+					<li class="active">
+						<a href="conditionpage.html">Condition</a>
+					</li>
+					<li>
+						<a href="loopingpage.html">Looping</a>
+					</li>
+                    <li>
+						<a href="arraypage.html">Array</a>
+					</li>
+                    <li>
+						<a href="objectpage.html">Object</a>
+					</li>
+                    <li>
+						<a href="functionpage.html">Function</a>
+					</li>
+					</ul>
+			</div>
+			<div class="footer p-4" style="text-align: left;">
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright @Kafekoding 2025, All rights reserved |<br> This template made by 
+				<a href="https://colorlib.com" target="_blank" style="color: #ffc908;">Colorlib.com</a></p>
+			</div>
+		</nav>
+		<div class="content">
+			<nav class="navbar navbar-dark bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
+                    <img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+                    <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+                    </form> -->
+                </div>
+            </nav>
+			<!-- Page Content  -->
+			<div id="content" class="p-4 p-md-5 pt-5">
+				<div class="container">
+					<h2 style="font-weight:700;">Condition/Percabangan</h2><br>
+                    <p>Pada pemograman JavaScript, ada 2 jenis dari condition, yaitu : 
+                    <li>If Else</li>
+                    <li>Switch Case</li>
+                    </p>
+                    <h4>If Else</h4>
+                    <p>Ada 3 bentuk dari if else statement, yaitu :
+                    <li>If</li>
+                    <li>If ... Else</li>
+                    <li>If ... Else If</li></p>
+                    <p style="font-weight: bold;">If Statement</p>
+                    <p>Percabangan if merupakan percabangan yang hanya memiliki satu blok pilihan saat kondisi bernilai benar.</p>
+                    <p><img src="img/flowchart-if.png" alt=""></p>
+                    <p>Terdapat dua cara dalam penulisan if statement, yaitu :</p>
+                    <li>Cara pertama (dengan blok {})</li><br>
+                    <code><p>
+                        let belanja = 10000<br>if(belanja === 10000){<br><nbsp>console.log("Selamat Anda mendapatkan hadiah")<br>}
+                    </p></code>
+                    <li>Cara kedua (tanpa blok)</li><br>
+                    <code><p>
+                        let belanja = 10000<br>if(belanja === 10000)<br>console.log("Selamat Anda mendapatkan hadiah")
+                    </p></code>
+                    <p style="font-weight: bold;">If ... Else Statement</p>
+                    <p>Percabangan if/else merupakan percabangan yang memiliki dua blok pilihan. Pilihan pertama untuk kondisi benar, dan pilihan kedua untuk kondisi salah (else).</p>
+                    <p><img src="img/flowchart-if-else-arrow.png" alt=""></p>
+                    <p>Jika kondisi if(...) nilainya true, maka kode di dalam body if akan dieksekusi. Kode di dalam body else akan dilewati dan tidak dieksekusi. <br>
+                    Jika kondisi if(...) nilainya false, maka kode di dalam body else akan dieksekusi. Kode di dalam body if akan dilewati dan tidak dieksekusi.</p>
+                    <code><p>
+                        let password = "UniversitasMetamedia"<br>if(password==="KhatibSulaiman"){<br>console.log("Selamat Datang")<br>}else{<br>console.log("Passwod salah, coba lagi")<br>}
+                    </p></code>
+                    <p style="font-weight: bold;">If ... Else If Statement</p>
+                    <p>Percabangan if/else if merupakan percabangan yang memiliki lebih dari dua blok pilihan, dimana pilihan kedua dan seterusnya menggunakan else if dan ditutup dengan else.</p>
+                    <p><img src="img/flowchart if-else-if.png" alt="" style="width: 40%;"></p>
+                    <p>Jika condition1 nilainya true, blok kode 1 akan dieksekusi. Jika condition1 nilainya false, maka statement else if condition2 akan dieksekusi. 
+                    Jika condition2 nilainya true, blok kode 2 akan dieksekusi. Jika condition2 nilainya false, blok kode 3 akan dieksekusi</p>
+                    <code><p>
+                        let nilai = 85<br><br>if(nilai >= 90){<br>console.log("Nilai A")<br>}else if(nilai >= 80){<br>console.log("Nilai B")<br>}else if(nilai >= 70){<br>console.log("Nilai C")<br>}else{<br>console.log("Nilai D")<br>}
+                    </p></code>
+                    <h4>Switch Case Statement</h4>
+                    <p>Switch adalah perintah yang digunakan untuk memeriksa nilai dari suatu variabel dan menjalankan kode tertentu berdasarkan nilai tersebut. Fungsinya mirip dengan if...else, tapi lebih rapi dan mudah dibaca kalau ada banyak kondisi.</p>
+                    <code><p>
+                        switch(variabel){<br>case value:<br>// blok kode<br>break;<br>case value2:<br>// blok kode<br>break;<br>default:<br>// blok kode<br>}
+                    </p></code>
+                    <p>Dimana : 
+                        <li>variabel → Merupakan nilai yang akan dievaluasi.</li>
+                        <li>case value → Jika nilai ekspresi sama dengan nilai1, blok kode setelah case akan dieksekusi.</li>
+                        <li>break → Menghentikan eksekusi switch setelah case yang cocok ditemukan dan dijalankan.</li>
+                        <li>default → Blok ini akan dieksekusi jika tidak ada nilai case yang cocok dengan nilai ekspresi. (default bersifat opsional).</li>
+                    </p>
+                    <p>Contoh sederhana dari switch case : </p>
+                    <code><p>
+                        let nilai = 85;<br><br>switch(true){<br>case (nilai >= 90):<br>console.log("A");<br>break;case (nilai >= 80):<br>console.log("B");<br>break;<br>case (nilai >= 70):<br>console.log("C");<br>break;<br>default:<br>console.log("D");<br>}
+                    </p></code>
+                    <h4>Perbedaan If Else dan Switch Case</h4>
+                    <p>Berikut tabel perbedaan if else dan switch case</p>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Perbedaan</th>
+                                <th>If Else</th>
+                                <th>Switch Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td>Cocok Untuk</td>
+                               <td>Mengecek kondisi kompleks dengan operator logika (>,<,&&)</td>
+                               <td>-</td>
+                            </tr>
+                             <tr>
+                                <td>Pengurangan</td>
+                                <td>-</td>
+                                <td>console.log(`${c} - ${b}`)</td>
+                             </tr>
+                             <tr>
+                                <td>Cara Kerja</td>
+                                <td>Mengecek kondisi satu per satu dari atas ke bawah</td>
+                                <td>Membandingkan nilai dengan daftar case yang ada</td>
+                             </tr>
+                             <tr>
+                                <td>Tipe Data</td>
+                                <td>Bisa untuk perbandingan angka, string, boolean, dll</td>
+                                <td>Biasanya untuk perbandingan nilai tetap (angka, string)</td>
+                             </tr>
+                             <tr>
+                                <td>Kinerja</td>
+                                <td>Bisa lambat jika memiliki banyak kondisi</td>
+                                <td>Lebih cepat jika memiliki banyak kondisi</td>
+                             </tr>
+                             <tr>
+                                <td>Sintaks</td>
+                                <td>Lebih fleksibel karena bisa menggunakan operasi logika</td>
+                                <td>Lebih rapi jika nilai tetap dan banyak pilihan</td>
+                             </tr>
+                             <tr>
+                                <td>Default behavior</td>
+                                <td>Jika kondisi cocok maka proses akan langsung berhenti</td>
+                                <td>Harus menggunakan break untuk menghentikan proses agar tidak lanjut ke case lain</td>
+                             </tr>
+                        </tbody>
+                    </table><p>Default behavior  : Perilaku bawaan atau tindakan otomatis yang akan terjadi jika tidak ada kondisi yang cocok atau terpenuhi.</p>
+                    <h4>Kapan Pakai If Else atau Switch Case?</h4>
+                    <p>If Else</p>
+                    <li>Kondisi Kompleks (menggunakan operator logika)</li>
+                    <li>Melibatkan rentang nilai</li><br>
+                    <p>Switch Case</p>
+                    <li>Nilai yang dibandingkan adalah tetap (angka, string)</li>
+                    <li>Pilihan kodisinya banyak dan sederhana</li><br>
+                    <h4>Ternary Condition</h4>
+                    <p>Ternary Condition merupakan percabangan yang menggunakan operator ternary (?) untuk menentukan nilai variabel berdasarkan kondisi percabangan.</p>
+                    <p>Format dari ternary condition yaitu : </p>
+                    <code><p>
+                        kondisi ? jikaTrue : jikaFalse;
+                    </p></code>
+                    <p>Ternary Condition merupakan bentuk lain dari if ... else dengan sintaks yang lebih singkat.</p>
+                    <p>Contoh sederhana dari ternary condition yaitu :</p>
+                    <code><p>
+                        let angka = 15;<br>let pesan = angka > 10 ? "Lebih besar dari 10" : "Tidak lebih besar dari 10";<br>console.log(pesan);
+                    </p></code>
+                </div>
+            </div>
+		</div>
+		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+	</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scrolldown-btn.js"></script>
+</body>
+</html>
