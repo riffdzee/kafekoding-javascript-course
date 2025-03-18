@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Looping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Outfit:300,400,500,600,700,800,900" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="short icon" href="img/Logo Kafe Koding HD.png">
+    <meta name="robots" content="noindex, follow">
+</head>
+<body>
+	<div class="wrapper d-flex align-items-stretch">
+		<nav id="sidebar">
+			<div class="p-4">
+				<ul class="list-unstyled components mb-5">
+					<li>
+						<a href="intropage.html">Pengenalan JavaScript</a>
+					</li>
+					<li>
+						<a href="toolspage.html">Tools yang Digunakan</a>
+					</li>
+					<li>
+						<a href="gitpage.html">GIT dan Github</a>
+					</li>
+					<li>
+						<a href="printpage.html">Mencetak Teks/Objek</a>
+					</li>
+					<li>
+						<a href="statementpage.html">Statement dan Expression</a>
+					</li>
+					<li>
+						<a href="commentpage.html">Membuat Komentar</a>
+					</li>
+					<li>
+						<a href="variablepage.html">Variabel</a>
+					</li>
+					<li>
+						<a href="datatypepage.html">Tipe Data</a>
+					</li>
+					<li>
+						<a href="operatorpage.html">Operator</a>
+					</li>
+					<li>
+						<a href="conditionpage.html">Condition</a>
+					</li>
+					<li class="active">
+						<a href="loopingpage.html">Looping</a>
+					</li>
+                    <li>
+						<a href="arraypage.html">Array</a>
+					</li>
+                    <li>
+						<a href="objectpage.html">Object</a>
+					</li>
+                    <li>
+						<a href="functionpage.html">Function</a>
+					</li>
+					</ul>
+			</div>
+			<div class="footer p-4" style="text-align: left;">
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright @Kafekoding 2025, All rights reserved |<br> This template made by 
+				<a href="https://colorlib.com" target="_blank" style="color: #ffc908;">Colorlib.com</a></p>
+			</div>
+		</nav>
+		<div class="content">
+			<nav class="navbar navbar-dark bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html" style="font-weight: bold;">
+                    <img src="img/JavaScript-logo.png" alt="logo" style="margin-right: 20px; width: 50px;">Kafekoding JavaScript</a>
+                    <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+                    </form> -->
+                </div>
+            </nav>
+			<!-- Page Content  -->
+			<div id="content" class="p-4 p-md-5 pt-5">
+				<div class="container">
+					<h2 style="font-weight:700;">Looping/Perulangan</h2><br>
+                    <p>Looping atau yang lebih dikenal dengan perulangan adalah suatu metode dalam pemrograman untuk meng eksekusi suatu berintah yang sama terus-menerus hingga kondisi tertentu terpenuhi.</p>	
+                    <p>Kenapa harus menggunakan looping/perulangan?</p>
+                    <p><img src="img/diperlukanfor.png" alt=""></p>
+                    <p>Ketika programmer membuat program looping maka akan menjadikan script yang harus ditulis sebanyak puluhan atau ratusan baris menjadi hanya beberapa baris saja. 
+                    Menggunakan looping berarti membuat sesuatu yang dapat menghasilkan banyak output dengan minimal script.</p>
+                    <p>Secara umum, perulangan ini dibagi dua, yaitu :</p>
+                    <li>Counted Loop merupakan perulangan yang jelas dan sudah tentu banyak perulangannya (For, Foreach, Repeat).</li>
+                    <li>Uncounted Loop, merupakan perulangan yang tidak jelas berapa kali ia harus mengulang (While, Do While).</li><br>
+                    <p>Pada kesempatan kali ini, kita hanya akan mempelajari tentang perulangan For, While dan Do While</p>
+                    <h4>Perulangan For</h4>
+                    <p>Perulangan for merupakan perulangan yang termasuk dalam counted loop, karena sudah jelas berapa kali ia akan mengulang. Contoh kodenya sebagai berikut :</p>
+					<code>
+						<p>
+                            for(let i = 0; i < 10; i++){<br>console.log("Perulangan ke-" + i )<br>}
+                        </p>
+					</code>
+					<p>Yang perlu diperhatikan adalah kondisi yang ada di dalam kurung setelah kata for. Kondisi ini akan menentukan :</p>
+                    <li>Hitungan akan dimulai dari 0 (i = 0);</li>
+                    <li>Hitungannya sampai berapa? Sampai i < 10;</li>
+                    <li>Lalu di setiap perulangan i akan bertambah +1 (i++).</li><br>
+                    <p>Variabel i pada perulangan for berfungsi untuk menyimpan nilai hitungan. Jadi setiap perulangan dilakukan nilai i akan selalu bertambah satu. Karena kita menentukannya di bagian i++. 
+                    Bila ingin merubah kelipatan nilai hitungan, maka kita bisa menyesuaikan bagian belakang dari i++ sesuai dengan kelipatan yang diinginkan. Misal nilai yang diinginkan berupa kelipatan 3, maka kita buat menjadi i+3.</p>
+					<code>
+						<p>for(let i = 0; i < 30; i+3){<br>console.log(“Perulangan ke-" + i)<br>}
+                        </p>
+					</code>
+					<p>Bagaimana kalau nilai perulangannya dimulai dari angka yang lebih besar sampai yang ke paling kecil? Ini biasanya kita buat saat ingin menghitung mundur…</p>
+                    <p>Caranya gampang. kita tinggal isi nilai a dengan nilai terbesarnya. Misalnya kita akan mulai hitungan dari 10 sampai ke 0. Maka nilai i nya, kita isi awalnya dengan 10. 
+                    Lalu di kondisi perbandingannya, kita berikan i > 0. Artinya perulangan akan dilakukan selama nilai i lebih besar dari 0. Lalu kita kurangi (-1) nilai counter di setiap perulangan (i--).</p>
+					<code>
+                        <p>
+                            for(let i = 10; i > 0; i--){<br>console.log("Perulangan ke-" + i)<br>}
+                            
+                        </p>
+                    </code>
+                    <p>Bila ingin menyesuaikan kelipatan nilainya, sama seperti di nilai perulangan yang dimulai dari angka yang lebih kecil ke angka yang lebih besar, kita bisa menyesuaikan bagian belakang dari i-- sesuai dengan kelipatan yang diinginkan. 
+                    Misal nilai yang diinginkan berupa kelipatan 3, maka kita buat menjadi i-3.</p>
+                    <code><p>
+                        for(let i = 30; i > 0; i-3){<br>console.log("Perulangan ke-" + i)<br>}  
+                    </p></code>
+                    <p>Mengapa tidak sampai nol (0)?</p>
+                    <p>Karena kondisi yang kita berikan i > 0. Apabila i bernilai 0, maka kondisi ini akan menjadi false. Bila ingin mendapatkan hasil nilai 0 juga, maka kita perlu menggunakan operator >= agar kondisi nilai 0 yang ada pada i menjadi true. Hal ini juga berlaku pada perulangan While dan Do While.</p>
+                    <h4>Perulangan While</h4>
+                    <p>Perulangan while merupakan perulangan yang termasuk dalam perulangan uncounted loop. Contoh kode nya seperti berikut :</p>
+                    <code><p>
+                        i = 0;<br>while (I < 10){<br>console.log("Perulangan ke-" + i);i++<br>}
+                    </p></code>
+                    <p>Bila ingin mendapatkan nilai perulangannya dimulai dari angka yang lebih besar sampai yang ke paling kecil, maka contoh kode nya sebagai berikut : </p>
+                    <code><p>
+                        i = 10;<br>while (i > 0){<br>console.log("Perulangan ke-" + i);i--<br>}
+                    </p></code>
+                    <p>Jika ingin menyesuaikan kelipatan nilainya, sama seperti perulangan for, kita bisa menyesuaikan bagian belakang dari i++/i-- sesuai dengan kelipatan yang diinginkan. Misal nilai yang diinginkan berupa kelipatan 3, maka kita buat menjadi i+3/i-3.</p>
+                    <h4>Perulangan Do While</h4>
+                    <p>Perulangan do/while sama seperti perulangan while, sama-sama perulangan uncounted loop. Lalu, dimanakah perbedaan diantara dua jenis perulangan ini?</p>
+                    <p>Perbedaannya:</p>
+                    <p>Perulangan do/while akan melakukan perulangan sebanyak 1 kali terlebih dahulu, lalu mengecek kondisi yang ada di dalam kurung while.</p>
+                    <p>Contoh kode nya seperti berikut :</p>
+                    <code><p>
+                        i = 0;<br>do{<br>console.log("Perulangan ke-" + i);i++<br>}while(i < 10)
+                    </p></code>
+                    <p>Bila ingin mendapatkan nilai perulangannya dimulai dari angka yang lebih besar sampai yang ke paling kecil, maka contoh kode nya sebagai berikut : </p>
+                    <code><p>
+                        i=10;<br>do{<br>console.log("Perulangan ke-" + i);i--<br>}while(I > 0)
+                    </p></code>
+                    <p>Jika ingin menyesuaikan kelipatan nilainya, sama seperti perulangan for, kita bisa menyesuaikan bagian belakang dari i++/i-- sesuai dengan kelipatan yang diinginkan. Misal nilai yang diinginkan berupa kelipatan 3, maka kita buat menjadi i+3/i-3.</p>
+                </div>
+			</div>
+		</div>
+		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+	</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scrolldown-btn.js"></script>
+</body>
+</html>
